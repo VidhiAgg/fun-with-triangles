@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Triangle Quiz</h1>
+    <form class="quiz-form" >
+        <div class="quiz-container">
+            <p>A ________ triangle is one where all 3 angles measure less than 90 degrees.</p>
+           
+           <label> <input value = "Acute"  type="radio" name="question1" />Acute</label>
+            <label><input value = "Obtuse"  name="question1" type="radio">Obtuse</label>
+            <label><input value = "Right" name="question1" type="radio"/>Right</label>
+        </div>
+        <div class="quiz-container">
+            <p>A triangle with no congruent sides and 1 angle greater than 90 degrees would be called __________ _________</p>
+            <label><input value = "Obtuse scalene" name = "question2" type="radio">Obtuse scalene</label>
+            <label><input value = "Right scalene" name = "question2" type="radio">Right scalene</label>
+            <label><input value = "Equilateral scalene" name = "question2" type="radio"/>Equilateral scalene</label>
+
+        </div>
+        <div class="quiz-container">
+            <p>An isosceles triangle has___________</p>
+            <label><input value = "2 congurent triangls"  name = "question3" type="radio">2 congurent triangls</label>
+            <label><input value = "3 congurent triangls"  name = "question3" type="radio">3 congurent triangls</label>
+            <label><input value = "No congurent triangls"  name = "question3" type="radio"/>No congurent triangls</label>
+
+        </div>
+        <div class="quiz-container">
+            <p>All 3 interior angles of a triangle add up to</p>
+            <label><input value = "180" name = "question4" type="radio">180</label>
+            <label><input value = "360" name = "question4" type="radio">360</label>
+            <label><input  value = "90" name = "question4" type="radio"/>90</label>
+
+        </div>
+        <div class="quiz-container">
+            <p>A triangle where all sides are congruent is called</p>
+            <label><input value = "Equilateral" name = "question5"type="radio">Equilateral</label>
+            <label><input value = "Scalene" name = "question5"type="radio">Scalene</label>
+            <label><input value = "Isosceles" name = "question5"type="radio"/>Isosceles</label>
+
+        </div>
+        <div class="quiz-container">
+            <p>This type of triangle has one 90 degree angle.</p>
+            <label><input value = "Right" name = "question6"type="radio">Right</label>
+            <label><input value = "Acute" name = "question6"type="radio">Acute</label>
+            <label><input value = "Obtuse" name = "question6"type="radio"/>Obtuse</label>
+
+        </div>
+        <div class="quiz-container">
+            <p>What is the third angle for the triangle where Angle1= 45degree, Angle2 = 45degree?</p>
+            <label><input value = "90" name = "question7"type="radio">90</label>
+            <label><input value = "45" name = "question7"type="radio">45</label>
+            <label><input value = "180" name = "question7"type="radio"/>180</label>
+        </div>
+    </form>
+</body><button id="submit-answer-button">Submit Answer</button>
+<div id="quiz-output"></div>
+<script src="quiz.js"></script>
+</html>
+
