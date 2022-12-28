@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area of Triangle</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
-    <h1>Check Area of Triangle</h1>
-    <h2>Area of Triangle = 1/2(Base * Height)</h2>
-    <label >Base(in cm)</label>
-    <input type="text" class="areaInput"><label >Height(in cm)</label>
-    <input type="text" class="areaInput">
-    <button id="area-button">Check Area</button>
-    <div id="output"></div>
+<nav class="navigation-container">
+    <div class="nav-brand">
+        <a style="text-decoration: none; color: var(--primary-color);" href="/index.html">Fun With Triangle</a>
+        </div>
+    <ul class="list-non-bullet nav-pills">
+        <li class="list-style-inline">
+            <a class="link link-active" href="/isTriangle.html">Is 🔺?</a>
+        </li>
+        <li class="list-style-inline">
+            <a class="link " href="/areaOfTriangle.html">Area of 🔺</a>
+        </li>
+        <li class="list-style-inline">
+            <a class="link " href="/hypotenus.html">Hypotenus of🔺</a>
+        </li>
+        <li class="list-style-inline">
+            <a class="link " href="/quiz.html">Quiz on🔺</a>
+        </li>
+    </ul>
+</nav>
+
+<body class="main-area">
+   
+        <h1>Check Area of Triangle</h1>
+        <h2><span style="font-weight :bolder; color: var(--primary-color );" >Area of Triangle = 1/2(Base * Height)</span> </h2>
+        <label>Base (in cm)</label>
+        <input type="text" class="areaInput"><label>Height (in cm)</label>
+        <input type="text" class="areaInput">
+        <button id="area-button">Check Area</button>
+        <div id="output"></div>
 </body>
 <script src="areaOfTriangle.js"></script>
+
 </html>

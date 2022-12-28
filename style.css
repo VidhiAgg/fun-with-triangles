@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Gemstones&display=swap');
+
+:root{
+    --primary-color : #AA0000;
+    --secondary-color : black;
+    --text-color: wheat;
+    --field-color : #f6e2e2;
+    
+}
+ body{
+   
+ }
+
+.list-non-bullet {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.list-style-inline {
+    display: inline;
+    padding: 0.2rem;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding: 0rem 0.2rem;
+}
+
+nav{
+    font-family: 'Pacifico', cursive;
+}
+.navigation-container {
+
+    box-shadow: 10px 20px 15px rgba(16, 17, 17, 0.233);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: 100%;
+    position: fixed;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    padding-inline-start: 0px;
+    font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    ;
+}
+
+.navigation-container .nav-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 0.6rem;
+    margin-left: 2.5rem;
+}
+
+.navigation-container .nav-pills {
+    text-align: right;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-inline-start: 0px;
+    margin-block-start: 0.5em;
+    margin-block-end: 0em;
+
+}
+
+.navigation-container .link-active {
+    font-weight: bold;
+}
+main{
+    display: flex;
+    margin: 6rem 3rem;
+    margin-top: 5rem;
+}
+img{
+   
+    margin-top: 5rem;
+    width: 100%;
+    
+}
+.buttons-div{
+    display: block;
+    margin-top: 3rem;
+}
+button{
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    margin: 2rem;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    width: 30%;
+    margin-right: 0rem;
+
+
+}
+
+button:hover{
+    border: 0.1rem solid var(--secondary-color);
+    color: black;
+}
+
+@media screen and (max-width: 900px){
+    button{
+        margin-left: 13rem;
+        margin-top: 1rem;
+        width: 45%;
+    }
+    img{
+        width: 180%;
+        margin-top: 6rem;   
+    }
+}
+
+#output{
+    font-family: 'Pacifico', 'Rubik Gemstones';
+    margin: 4rem;
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: var(--field-color);
+    color: var(--primary-color);
+
+}
+
+input{
+    height: 2rem;
+   border: none;
+    margin: 1rem;
+    padding: 0.2rem;
+    background-color: var(--field-color);
+}
+/* Area Of TRIANGLE CSS */
+.main-area{
+    margin: 6rem 3rem;
+}
+label{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+#area-button{
+    width: 20%;
+}
+
+@media screen and (max-width: 900px){
+    .areaInput{
+        margin: 1rem 2rem;
+        display: inline-grid;
+        width: 80%;
+    }
+    #area-button{
+        margin-left: 8rem;
+        width: 40%;
+    }
+}
+
+
+/* Is Triangle css */
+
+.main-isTriangle, .quiz-main, .hypo-main{
+    margin: 6rem 3rem;
+   
+}
+
+.main-isTriangle button{
+    margin-left: 15rem;
+    width: 20%;
+}
+
+@media screen and (max-width: 900px){
+.angle-input-is-triangle{
+    margin: 1rem;
+    display: inline-grid;
+    margin-left: 2rem;
+    width: 80%;
+}
+.main-isTriangle button{
+    margin-left: 12rem;
+    width: 40%;
+}
+}
+
+/* Hypo css */
+@media screen and (max-width: 900px){
+.hypo-main{
+   text-align: center;
+  
+   padding: 1rem;
+}
+    #hypotenus-btn{
+margin-left: 6rem;
+width: 40%;
+}
+}
+
+/* Quiz css */
+
+.quiz-main{
+    margin: 6rem 3rem;
+    
+}
+
+.quiz-main label{
+    font-size: 1rem;
+    margin: 0rem;
+    padding: 0rem;
+    font-weight: lighter;
+    display: inline-flex;
+    font-weight: 500;
+
+}
+.quiz-main input{
+    margin-top: -0.5rem;
+    display: inline-flex;
+}
+
+.quiz-main p{
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 900px){
+
+#submit-answer-button{
+margin-left: 5rem;
+}
+}

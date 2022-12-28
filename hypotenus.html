@@ -5,16 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Play with hypotenus</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Calculate Hypotenus</h1>
-    <label >a=</label>
-    <input type="text" class="side-input">
-    <label >b=</label>
-    <input type="text" class="side-input">
-
-    <button id="hypotenus-btn">Calculate Hypotenus</button>
-    <div id="output-hypo"></div>
+<nav class="navigation-container">
+    <div class="nav-brand">
+        <a style="text-decoration: none; color: var(--primary-color);" href="/index.html">Fun With Triangle</a>
+        </div>
+    <ul class="list-non-bullet nav-pills">
+        <li class="list-style-inline">
+            <a class="link link-active" href="/isTriangle.html">Is 🔺?</a>
+        </li>
+        <li class="list-style-inline">
+            <a class="link " href="/areaOfTriangle.html">Area of 🔺</a>
+        </li>
+        <li class="list-style-inline">
+            <a class="link " href="/hypotenus.html">Hypotenus of🔺</a>
+        </li>
+        <li class="list-style-inline">
+            <a class="link " href="/quiz.html">Quiz on🔺</a>
+        </li>
+    </ul>
+</nav>
+<body >
+    <div class="hypo-main">
+        <h1>Calculate Hypotenus</h1>
+        <label >a = </label>
+        <input type="text" class="side-input">
+        <label >b = </label>
+        <input type="text" class="side-input">
+    
+        <button id="hypotenus-btn">Calculate Hypotenus</button>
+        <div id="output"></div>
+    </div>
+ 
 </body>
 <script src="hypotenus.js"></script>
 </html>

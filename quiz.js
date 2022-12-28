@@ -1,7 +1,8 @@
 const quizForm = document.querySelector(".quiz-form")
 const submitButton = document.querySelector("#submit-answer-button");
-const quizOutput = document.querySelector("#quiz-output");
+const quizOutput = document.querySelector("#output");
 const correctAnswer = ["Acute", "Obtuse scalene","2 congurent triangls","180","Equilateral","Right","90"] 
+quizOutput.style.display="none";
 
 function calculateScore(){
 let score = 0;
@@ -15,6 +16,7 @@ const formResults = new FormData(quizForm);
     }
     index++;
  }
+ quizOutput.style.display="block";
  quizOutput.innerText = "Your score is : " + score;
 }
 submitButton.addEventListener("click", calculateScore )
